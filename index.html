@@ -60,16 +60,16 @@
 
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://daeunni.github.io/" target="_blank">Daeun Lee</a><sup>* 1</sup></span>
+                <a href="https://daeunni.github.io/" target="_blank">Daeun Lee   </a><sup>* 1</sup></span>
                 <span class="author-block">
-                  <a href="https://jaehong31.github.io/" target="_blank">Jaehong Yoon</a><sup>* 2</sup></span>
+                  <a href="https://jaehong31.github.io/" target="_blank">Jaehong Yoon   </a><sup>* 2</sup></span>
                   <span class="author-block">
                     <a href="http://www.sungjuhwang.com/" target="_blank">Sung Ju Hwang</a><sup>3</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1 </sup>Korea University, <sup>2 </sup>UNC Chapel Hill, <sup>3 </sup>KAIST,<br></span>
+                    <span class="author-block"><sup>1 </sup>Korea University, <sup>2 </sup>UNC Chapel Hill, <sup>3 </sup>KAIST<br></span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -154,20 +154,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Continual test-time adaptation (CTTA) aims to adjust the model and improve its performance during deployment over changing conditions. CTTA is an important problem 
-            because it enables models to remain effective and reliable in dynamic and evolving environments. 
-            However, tackling the CTTA problem is nontrivial for the following reasons. 
-            The model should be sufficiently efficient in terms of computational cost and memory since it needs 
-            to rapidly update its parameters to match changing environments in real-time. 
-            It also needs to generalize well to unseen domains while maintaining the representations 
-            of the previous domains it is trained on or adapted to, as they can be revisited in future adaptation phases. 
-            In this paper, we propose BECoTTA, a memory-efficient yet powerful framework for continual test-time adaptation, 
-            consisting of two core components: \i) Mixture-of-Domain Low-rank Adapters (MoDLoRA) which preserves diverse 
-            domain-specific knowledge during CTTA by alleviating the catastrophic forgetting, and 
-            ii) domain-agnostic mutual information loss which allows input-adaptive and selective transfer 
-            of acquired domain knowledge for effective adaptation. We validate our proposed method over multiple 
-            CTTA benchmarks that contain dashcam videos and demonstrate that BECoTTA achieves superior performance 
-            over SOTA TTA methods while only requiring 0.18x trainable parameters.
+            Continual Test Time Adaptation (CTTA) is required to adapt efficiently to continuous unseen domains while retaining previously learned knowledge. 
+            However, despite the progress of CTTA, forgetting-adaptation trade-offs and efficiency are still unexplored. 
+            Moreover, current CTTA scenarios assume only the disjoint situation, even though real-world domains are seamlessly changed. 
+            To tackle these challenges, this paper proposes BECoTTA, an input-dependent yet efficient framework for CTTA. 
+            We propose Mixture-of-Domain Low-rank Experts (MoDE) that contains two core components: i) Domain- Adaptive Routing, 
+            which aids in selectively capturing the domain-adaptive knowledge with multiple domain routers, and (ii) Domain-Expert Synergy Loss 
+            to maximize the dependency between each domain and expert. 
+            We validate our method outperforms multiple CTTA scenarios including disjoint and gradual domain shits, while only requiring ∼98% fewer trainable parameters. 
+            We also provide analyses of our method, including the construction of experts, the effect of domain-adaptive experts, and visualizations.
           </p>
         </div>
       </div>
