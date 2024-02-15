@@ -205,47 +205,30 @@
   </div>
 </section>
 
-  
-<!-- ㅡMethod-->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Method</h2>
 
-      <!-- <h4 class="title is-3">1. Overview</h4> -->
-      <div class="columns is-centered has-text-centered">
-          <div class="item">
-            <img src="static/images/main.png" alt="MY ALT TEXT"/>
-              <h2 class="subtitle has-text-centered">
-              <br>
-              <b>Overview of BECoTTA (Input-dependent Online Blending of Experts)</b><br>
-              <p class="left-align">
-                We propose BECoTTA which can address dynamic real-world continual scenarios including disjoint and
-                gradual shifts. Our MoDLoRA layers ensure efficient input-dependent domain knowledge transfer while continual adaptation. 
-                The gray parts in the figure represent the frozen parts while conducting CTTA.
+<!-- Method -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+    <h2 class="title is-3">Method</h2>
 
-        <!-- </div> -->
-        <!-- <h4 class="title is-3">2. MoDLoRA (Mixture-of-Domain Low-Rank Adapters)</h4> -->
-          <div class="item">
-            <img src="static/images/moda_final.png" alt="MY ALT TEXT"/>
-              <h2 class="subtitle has-text-centered">
-              <br>
-              <b>Overview of MoDLoRA (Mixture-of-Domain Low-Rank Adapters)</b><br>
-              <p class="left-align">
-                Our MoDLoRA consists of domain-specific routers
-                and low-rank adapters. Each domain-specific router selects the topK probable
-                adapters and sparsely activates domain knowledge. 
-                Also, the router probability can be utilized to aggregate the mutual information
-                between adapters and domains. 
-              </p>
-            </h2>
-          </div>
+      <center><img src="static/images/main.png" alt="Teaser" width="100%"></center>
+
+      <div class="content has-text-justified">
+        
+        <b>Figure 3:</b> : The overview of <b>BECoTTA</b>. We propose a novel CTTA framework for dynamic real-world scenarios, including
+          disjoint and gradual shifts of domains. When the model receives a target domain input, the Domain
+          Discriminator (DD) first estimates a pseudo-domain label. Based on the estimated pseudo labels, the domain router
+          processes the input to specific experts containing domain-specific information by minimizing our proposed Domain-Expert
+          Synergy Loss. Finally, we obtain domain-adaptive representation, addressing downstream tasks in test-time.
+        
       </div>
+
     </div>
   </div>
+  </div>
 </section>
-<!-- End video carousel -->
 
 
 <!-- Experiments -->
