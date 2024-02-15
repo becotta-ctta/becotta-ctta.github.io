@@ -155,30 +155,6 @@
 
 </section>
 
-<!-- Paper abstract -->
-<!-- <section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Continual Test Time Adaptation (CTTA) is required to adapt efficiently to continuous unseen domains while retaining previously learned knowledge. 
-            However, despite the progress of CTTA, forgetting-adaptation trade-offs and efficiency are still unexplored. 
-            Moreover, current CTTA scenarios assume only the disjoint situation, even though real-world domains are seamlessly changed. 
-            To tackle these challenges, this paper proposes BECoTTA, an input-dependent yet efficient framework for CTTA. 
-            We propose Mixture-of-Domain Low-rank Experts (MoDE) that contains two core components: i) Domain- Adaptive Routing, 
-            which aids in selectively capturing the domain-adaptive knowledge with multiple domain routers, and (ii) Domain-Expert Synergy Loss 
-            to maximize the dependency between each domain and expert. 
-            We validate our method outperforms multiple CTTA scenarios including disjoint and gradual domain shits, while only requiring ∼98% fewer trainable parameters. 
-            We also provide analyses of our method, including the construction of experts, the effect of domain-adaptive experts, and visualizations.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End paper abstract -->
 
 
 
@@ -241,7 +217,7 @@
   </div>
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-      <h2 class="title is-5">Continual Disjoint Shifts (CDS) - Imbalanced Weather & Area Shifts Scenario </h2>
+      <h2 class="title is-5">Continual Disjoint Shifts (CDS) - Hard : Imbalanced Weather & Area Shifts Scenario </h2>
 
     <center><img src="static/images/MT1.png" alt="Teaser" width="100%"></center>
 
@@ -253,8 +229,47 @@
   </div>
 
 
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-5">Continual Disjoint Shifts (CDS) - Easy : Balanced Weather Shifts Scenario</h2>
 
+    <center><img src="static/images/MT2.png" alt="Teaser" width="100%"></center>
 
+    <div class="content has-text-justified">
+      We use the Cityscapes-to-ACDC benchmark, containing balanced
+      weather shifts for target domains. For a fair comparison, we report both w/o WAD and w/ WAD performance of our method.
+      The number of the parameters for DePT and VDP are not available as they do not provide the official codes.
+    </div>
+  </div>
+  </div>
+
+    
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-5">Continual Gradual Shifts (CGS) Scenario</h2>
+
+    <center><img src="static/images/MT3.png" alt="Teaser" width="80%"></center>
+
+    <div class="content has-text-justified">
+      We construct the novel gradual shifts scenario using CDS-Easy target domains.
+      In this case, the input-dependent process of BECoTTA performs well in these blurry scenarios and ultimately shows <b>+13.4%p</b> improvement over the source model.
+    </div>
+  </div>
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-5">Zero-shot Domain Generalization Benchmark </h2>
+
+    <center><img src="static/images/MT4.png" alt="Teaser" width="100%"></center>
+
+    <div class="content has-text-justified">
+      We compare the zero-shot performance of our method with strong TTA methods on four unseen domains. 
+      Our proposed method constantly outperforms strong baselines, demonstrating the competitive potential of generalization ability over unseen domains. 
+    </div>
+  </div>
+  </div>
+    
   </div>
 </section>
 
