@@ -133,8 +133,6 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <!-- <h2 class="title is-3">Overview</h2> -->
-        
         <div class="content has-text-justified">
           <div class="content has-text-justified">
             <b>Figure 1:</b>  Our <b>BECoTTA</b> achieves superior performance and parameter/memory efficiency against strong CTTA baselines on the CDS-hard scenario.
@@ -191,13 +189,15 @@
       <div class="column is-four-fifths">
     <h2 class="title is-3">Motivation</h2>
 
-      <center><img src="static/images/motivation.png" alt="Teaser" width="80%"></center>
+      <center><img src="static/images/motivation.png" alt="Teaser" width="100%"></center>
 
       <div class="content has-text-justified">
+        
         <b>Figure 2:</b> <b>Comparison of TTA process with other SoTA models.</b> We compare the existing models and denote activated modules as yellow during CTTA process. 
           In particular, CoTTA adopts the mean-teacher architecture and updates the entire model. TENT and EcoTTA update a
           few parts of the model, however, they achieve suboptimal performance with forgetting. Meanwhile, our BECoTTA updates
           only MoDE layers for efficient and rapid adaptation while preserving previous knowledge.
+        
       </div>
 
     </div>
