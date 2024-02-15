@@ -183,63 +183,6 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-      
-    <div class="container">
-     <h2 class="title">Motivation</h2>
-     
-      <div id="results-carousel" class="carousel results-carousel">
-
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/motivation.png" alt="MY ALT TEXT"
-        />
-        <h2 class="subtitle has-text-centered">
-        <br>
-          <b>The main challenge of Continual Test-time Adaptation (CTTA).</b><br>
-          <p class="left-align">
-          The main challenge of CTTA includes <i>(i) Forgetting & Adaptation trade-off</i> and <i>(ii) Computational efficiency</i>. 
-          However, previous works mainly focused on preventing forgetting source model’s knowledge.  
-          </p>
-        </h2>
-      </div>
-
-      <div class="item">    
-        <img src="static/images/disjoint.png" alt="MY ALT TEXT"
-        />
-        <h2 class="subtitle has-text-centered">
-        <br>
-          <b>Disjoint v.s. Gradual domain shifts.</b><br>
-          <p class="left-align">
-          There are gradual domain shifts in the real world. 
-          owever, previous benchmarks only focused on disjoint shift scenario, but real-world shifts are more like gradual shifts. 
-          </p>
-        </h2>
-      </div>
-
-
-      <!-- <div class="item"> -->
-        <!-- Your image here -->
-        <!-- <img src="static/images/motivation3.png" alt="MY ALT TEXT"
-        />
-        <h2 class="subtitle has-text-centered">
-        <br>
-         <b>Cross-attention maps obtained by matched or unmatched data pairs.</b><br>
-         <p class="left-align">
-          In both modalities, the cross-attention maps with the past data often concentrate on misleading locations when the past data is
-          largely different from the current task.
-         </p>
-       </h2>
-     </div> -->
-     
-  </div>
-</div>
-</div>
-</section> -->
-<!-- End image carousel -->
-
 
 <!-- Motivation -->
 <section class="section">
@@ -248,10 +191,10 @@
       <div class="column is-four-fifths">
     <h2 class="title is-3">Motivation</h2>
 
-      <center><img src="static/images/motivation.png" alt="Teaser" width="100%"></center>
+      <center><img src="static/images/motivation.png" alt="Teaser" width="80%"></center>
 
       <div class="content has-text-justified">
-        <b>Figure 2: <b>Comparison of TTA process with other SoTA models.</b> We compare the existing models and denote activated modules as yellow during CTTA process. 
+        <b>Figure 2:</b> <b>Comparison of TTA process with other SoTA models.</b> We compare the existing models and denote activated modules as yellow during CTTA process. 
           In particular, CoTTA adopts the mean-teacher architecture and updates the entire model. TENT and EcoTTA update a
           few parts of the model, however, they achieve suboptimal performance with forgetting. Meanwhile, our BECoTTA updates
           only MoDE layers for efficient and rapid adaptation while preserving previous knowledge.
